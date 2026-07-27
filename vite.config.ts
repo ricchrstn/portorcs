@@ -3,10 +3,9 @@ import path from "path";
 import { defineConfig } from "vite";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
-export default defineConfig(({ mode }) => ({
-  // Development menggunakan root "/"
-  // Production (GitHub Pages) menggunakan repository
-  base: mode === "production" ? "/website-portofolioku/" : "/",
+export default defineConfig({
+  // Selalu set base path ke nama repository GitHub Pages Anda
+  base: "/website-portofolioku/",
 
   server: {
     host: "::",
@@ -100,4 +99,4 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-}));
+});
