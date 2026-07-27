@@ -1,0 +1,17 @@
+{
+    "name": "Rizky Cristian S",
+    "short_name": "Cristian",
+    "description": "Informatics Engineering Graduate | Software Engineer | Web Developer | IT Support Enthusiast",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#121226",
+    "theme_color": "#121226",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
