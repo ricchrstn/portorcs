@@ -3,7 +3,6 @@ import path from "path";
 import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
-
 export default defineConfig({
   // Selalu set base path ke nama repository GitHub Pages Anda
   base: "/website-portofolioku/",
@@ -61,6 +60,11 @@ export default defineConfig({
 
     rollupOptions: {
       output: {
+        // PERBAIKAN UTAMA: Memastikan nama file hasil build menggunakan ekstensi .js secara transparan
+        entryFileNames: "assets/[name]-[hash].js",
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash].[ext]",
+
         manualChunks(id) {
           if (!id.includes("node_modules")) return;
 
