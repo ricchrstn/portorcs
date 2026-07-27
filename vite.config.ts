@@ -5,7 +5,7 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
   // Selalu set base path ke nama repository GitHub Pages Anda
-  base: "/website-portofolioku/",
+  base: "/portorcs/",
 
   server: {
     host: "::",
